@@ -1,0 +1,95 @@
+html,
+body,
+#game-root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #05070b;
+  color: #e6edf7;
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.interrogation-form,
+.report-form {
+  width: 100%;
+  color: #eef2f8;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+.interrogation-form {
+  display: flex;
+  gap: 10px;
+}
+
+.interrogation-form input {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  border: 1px solid #b89045;
+  background: rgba(8, 12, 18, 0.95);
+  color: #f7efe4;
+  padding: 0 14px;
+  outline: none;
+}
+
+.interrogation-form button,
+.report-form button {
+  border: 1px solid #b89045;
+  background: #172033;
+  color: #f7efe4;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+.report-form {
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.report-form label {
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.report-form input,
+.report-form textarea,
+.report-form select {
+  border: 1px solid #344258;
+  background: rgba(8, 12, 18, 0.96);
+  color: #eef2f8;
+  padding: 8px;
+  outline: none;
+}
+
+.report-form textarea {
+  min-height: 70px;
+  resize: none;
+}
+
+.evidence-checks {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  max-height: 120px;
+  overflow: auto;
+  border: 1px solid #344258;
+  padding: 8px;
+  background: rgba(8, 12, 18, 0.78);
+}
+
+.report-actions {
+  display: flex;
+  gap: 10px;
+}
